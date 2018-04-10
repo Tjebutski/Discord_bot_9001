@@ -1,5 +1,6 @@
 # https://github.com/Rapptz/discord.py/blob/async/examples/reply.py
 import discord
+from discord import Member, message
 
 TOKEN = 'NDA0OTkzNjYxMDU5ODU4NDMz.DazwaQ.P9e8ajUAaVo6dwb-z7tymyjKn9o'
 
@@ -15,6 +16,13 @@ async def on_message(message):
     if message.content.startswith('!hello'):
         msg = 'Hello {0.author.mention}'.format(message)
         await client.send_message(message.channel, msg)
+
+
+@client.event
+async def on_typing(channel, Member, when):
+    if Member.id == '284823748371021825':
+        msg = 'EXECUTE THE IMPOSTER'
+        await client.send_message(channel, msg)
 
 
 @client.event
