@@ -19,8 +19,8 @@
       <file leaf-file-name="Bot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding>
                 <element signature="e#68#82#0" expanded="true" />
               </folding>
@@ -166,7 +166,7 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" weight="0.3297414" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3286638" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3599138" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3599138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -259,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="e#68#82#0" expanded="true" />
           </folding>
