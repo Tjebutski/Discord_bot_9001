@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Bot.py" line="19" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="73cd86e9-4d1a-4d0a-9260-172552014a66" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bot.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +20,8 @@
       <file leaf-file-name="Bot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-              <folding>
-                <element signature="e#68#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -45,8 +46,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="1522" />
+    <option name="y" value="-299" />
     <option name="width" value="1296" />
     <option name="height" value="786" />
   </component>
@@ -58,7 +59,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -79,9 +79,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -133,6 +135,14 @@
       <option name="presentableId" value="Default" />
       <updated>1523282633760</updated>
     </task>
+    <task id="LOCAL-00001" summary="fuck this shit">
+      <created>1523353745319</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523353745320</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -145,17 +155,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="786" extended-state="6" />
+    <frame x="1272" y="-286" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12480127" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12592202" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.3297414" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.3297414" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3287037" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45679012" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.3287037" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" weight="0.3297414" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3286638" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3599138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297414" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39969134" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -164,8 +175,26 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1263911" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49947312" weight="0.3297414" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19290124" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969134" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297414" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" weight="0.3297414" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3287037" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -196,24 +225,34 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fuck this shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuck this shit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#68#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="663">
+          <caret line="39" column="146" selection-start-line="39" selection-start-column="146" selection-end-line="39" selection-end-column="146" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding>
-            <element signature="e#68#82#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
