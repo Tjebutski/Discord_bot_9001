@@ -1,5 +1,7 @@
 # https://github.com/Rapptz/discord.py/blob/async/examples/reply.py
 import discord
+from discord import Game
+import asyncio
 
 TOKEN = 'NDA0OTkzNjYxMDU5ODU4NDMz.DazwaQ.P9e8ajUAaVo6dwb-z7tymyjKn9o'
 
@@ -65,9 +67,20 @@ async def on_typing(channel, Member, when):
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(game=Game(name='with humans!'))
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
     print('------')
 
+
+async def list_servers():
+    await bot.wait_until_ready()
+    while not bot.is_closed:
+        print('Current servers: ')
+        for server in bot.servers:
+            print(server.name)
+        await asyncio.sleep(600)
+
+bot.loop.create_task(list_servers())
 bot.run(TOKEN)
