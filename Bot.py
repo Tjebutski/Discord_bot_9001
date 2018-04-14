@@ -3,7 +3,7 @@ import discord
 from discord import Game
 import asyncio
 
-TOKEN = 'NDA0OTkzNjYxMDU5ODU4NDMz.DazwaQ.P9e8ajUAaVo6dwb-z7tymyjKn9o'
+TOKEN = 'XXXXXXXX'
 
 
 bot = discord.Client()
