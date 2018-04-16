@@ -3,64 +3,51 @@ import discord
 from discord import Game
 import asyncio
 
-TOKEN = 'NDA0OTkzNjYxMDU5ODU4NDMz.DazwaQ.P9e8ajUAaVo6dwb-z7tymyjKn9o'
-
-
+TOKEN = open('TOKEN.txt', 'r').read()
 bot = discord.Client()
+
+
+async def check_if_enabled():
+    # global
+    global checkIfEnabled
+    checkIfEnabled = False
 
 
 @bot.event
 async def on_message(message):
-    # Global
-    global isEnabled
-    isEnabled = 'dif'
-
     # we do not want the bot to reply to itself
     if message.author == bot.user:
         return
 
-    elif message.content.startswith('!hello'):
+    if message.content.startswith('!hello'):
         msg = 'Hello {0.author.mention}'.format(message)
         await bot.send_message(message.channel, msg)
 
     # turn on/off message spam
     elif message.content.startswith('!turnon'):
         if message.author.id == '106814905583169536':
-            isEnabled = 'on'
             msg = 'Message spam is enabled'
+            checkifenabled = True
             await bot.send_message(message.channel, msg)
-            return
-        elif (message.author.id == '106814905583169536') & (isEnabled == 'on'):
-            msg = 'Message spam is already enabled'
-            await bot.send_message(message.channel, msg)
-            return
         else:
             msg = '{0.author.mention} you are not authorised for this command'.format(message)
             await bot.send_message(message.channel, msg)
-            return
     elif message.content.startswith('!turnoff'):
-        if (message.author.id == '106814905583169536') & (isEnabled == 'on'):
-            isEnabled = 'off'
+        if message.author.id == '106814905583169536':
             msg = 'Message spam is disabled'
             await bot.send_message(message.channel, msg)
-            return
-        elif (message.author.id == '106814905583169536') & (isEnabled == 'off') | (message.author.id == '106814905583169536') & (isEnabled == 'dif'):
-            msg = 'Message spam is already disabled'
-            await bot.send_message(message.channel, msg)
-            return
         else:
             msg = '{0.author.mention} you are not authorised for this command'.format(message)
             await bot.send_message(message.channel, msg)
-            return
 
 
 @bot.event
 async def on_typing(channel, Member, when):
-    if (Member.id == '284823748371021825') & (isEnabled == 'on'):
+    if Member.id == '284823748371021825':
         msg = 'V this is an impostor, execute him V'
         await bot.send_message(channel, msg)
 
-    elif (Member.id == '106814905583169536') & (isEnabled == 'on'):
+    elif Member.id == '106814905583169536' & checkIfEnabled == True:
         msg = 'SHUT THE FUCK UP, the REAL queen is speaking'
         await bot.send_message(channel, msg)
 
@@ -68,6 +55,7 @@ async def on_typing(channel, Member, when):
 @bot.event
 async def on_ready():
     await bot.change_presence(game=Game(name='with humans!'))
+    print('------')
     print('Logged in as')
     print(bot.user.name)
     print(bot.user.id)
