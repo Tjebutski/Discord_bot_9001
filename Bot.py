@@ -7,14 +7,12 @@ TOKEN = open('TOKEN.txt', 'r').read()
 bot = discord.Client()
 
 
-async def check_if_enabled():
-    # global
-    global checkIfEnabled
-    checkIfEnabled = False
-
-
 @bot.event
 async def on_message(message):
+    # global
+    global checkIfEnabled
+    checkIfEnabled = 'off'
+
     # we do not want the bot to reply to itself
     if message.author == bot.user:
         return
@@ -27,7 +25,7 @@ async def on_message(message):
     elif message.content.startswith('!turnon'):
         if message.author.id == '106814905583169536':
             msg = 'Message spam is enabled'
-            checkifenabled = True
+            checkifenabled = 'on'
             await bot.send_message(message.channel, msg)
         else:
             msg = '{0.author.mention} you are not authorised for this command'.format(message)
@@ -35,6 +33,7 @@ async def on_message(message):
     elif message.content.startswith('!turnoff'):
         if message.author.id == '106814905583169536':
             msg = 'Message spam is disabled'
+            checkifenabled = 'off'
             await bot.send_message(message.channel, msg)
         else:
             msg = '{0.author.mention} you are not authorised for this command'.format(message)
@@ -44,10 +43,10 @@ async def on_message(message):
 @bot.event
 async def on_typing(channel, Member, when):
     if Member.id == '284823748371021825':
-        msg = 'V this is an impostor, execute him V'
+        msg = 'Fun fact: {0.author.mention} is mildly retarded'.format(discord.message)
         await bot.send_message(channel, msg)
 
-    elif Member.id == '106814905583169536' & checkIfEnabled == True:
+    elif Member.id == '106814905583169536' & checkIfEnabled == 'on':
         msg = 'SHUT THE FUCK UP, the REAL queen is speaking'
         await bot.send_message(channel, msg)
 
